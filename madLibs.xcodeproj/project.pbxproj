@@ -14,6 +14,8 @@
 		49743AA71F685DBA00064DB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49743AA51F685DBA00064DB4 /* LaunchScreen.storyboard */; };
 		49743AB21F685DBA00064DB4 /* madLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49743AB11F685DBA00064DB4 /* madLibsTests.swift */; };
 		49743ABD1F685DBA00064DB4 /* madLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49743ABC1F685DBA00064DB4 /* madLibsUITests.swift */; };
+		49743ACB1F6868A200064DB4 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49743ACA1F6868A200064DB4 /* AddItemViewController.swift */; };
+		49743ACD1F686D2800064DB4 /* AddItemDel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49743ACC1F686D2800064DB4 /* AddItemDel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		49743AB81F685DBA00064DB4 /* madLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = madLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49743ABC1F685DBA00064DB4 /* madLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = madLibsUITests.swift; sourceTree = "<group>"; };
 		49743ABE1F685DBA00064DB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49743ACA1F6868A200064DB4 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		49743ACC1F686D2800064DB4 /* AddItemDel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemDel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				49743A9C1F685DBA00064DB4 /* AppDelegate.swift */,
 				49743A9E1F685DBA00064DB4 /* ViewController.swift */,
 				49743AA01F685DBA00064DB4 /* Main.storyboard */,
+				49743ACA1F6868A200064DB4 /* AddItemViewController.swift */,
+				49743ACC1F686D2800064DB4 /* AddItemDel.swift */,
 				49743AA31F685DBA00064DB4 /* Assets.xcassets */,
 				49743AA51F685DBA00064DB4 /* LaunchScreen.storyboard */,
 				49743AA81F685DBA00064DB4 /* Info.plist */,
@@ -193,7 +199,7 @@
 				TargetAttributes = {
 					49743A981F685DBA00064DB4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					49743AAC1F685DBA00064DB4 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -261,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49743ACD1F686D2800064DB4 /* AddItemDel.swift in Sources */,
 				49743A9F1F685DBA00064DB4 /* ViewController.swift in Sources */,
 				49743A9D1F685DBA00064DB4 /* AppDelegate.swift in Sources */,
+				49743ACB1F6868A200064DB4 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewlau.madLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -434,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewlau.madLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
